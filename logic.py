@@ -155,14 +155,14 @@ WHERE skill_id = ? AND project_id = ? """
 WHERE status_id = ? '''
         self.__executemany(sql, [(status_id)])
 
-    
-
-
-    
-        
+     
 
 
 if __name__ == '__main__':
     manager = DB_Manager(DATABASE)
    # manager.default_insert() 
     manager.update_status(('.', 'Обновлен'))
+
+
+
+
